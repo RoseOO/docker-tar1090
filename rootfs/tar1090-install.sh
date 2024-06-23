@@ -6,7 +6,7 @@ set -e
 trap 'echo "[ERROR] Error in line $LINENO when executing: $BASH_COMMAND"' ERR
 
 srcdir=/run/readsb
-repo="https://github.com/wiedehopf/tar1090"
+repo="https://github.com/RoseOO/tar1090"
 db_repo="https://github.com/wiedehopf/tar1090-db"
 
 # optional command line options for this install script
