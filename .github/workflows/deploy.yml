@@ -53,7 +53,7 @@ jobs:
       push_destinations: ghcr.io;dockerhub
       ghcr_repo_owner: ${{ github.repository_owner }}
       ghcr_repo: ${{ github.repository }}
-      dockerhub_profile: mikenye
+      dockerhub_profile: rose
       dockerhub_repo: tar1090
       get_version_method: git_commit_hash_short
       # set build_latest to true if github.event.inputs.use_test_image is false
