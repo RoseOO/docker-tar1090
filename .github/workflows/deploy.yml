@@ -65,7 +65,7 @@ jobs:
       build_nohealthcheck: ${{ github.event.inputs.use_test_image == 'false' || github.event.inputs.use_test_image == '' }}
       build_baseimage_url: wreadsb/wreadsb-test-pr
     secrets:
-      ghcr_token: ${{ secrets.GITHUB_TOKEN }}
+      ghcr_token: ${{ secrets.GT_TOKEN }}
       dockerhub_token: ${{ secrets.DOCKERHUB_TOKEN }}
 
   # unfortunately we can't use build_and_push_image.yml to build the telegraf label because
@@ -94,7 +94,7 @@ jobs:
       dockerfile_changes: |
         ##telegraf##/
     secrets:
-      ghcr_token: ${{ secrets.GITHUB_TOKEN }}
+      ghcr_token: ${{ secrets.GT_TOKEN }}
       dockerhub_token: ${{ secrets.DOCKERHUB_TOKEN }}
 
   trigger_build_sdr-enthusiasts_ultrafeeder:
